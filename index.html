@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script type="text/javascript" src="./src/timer.js" defer></script>
+</head>
+<body>
+<div id="timerContainer">
+    <h1>StopWatch</h1>
+<div class="timer" onclick="startTimer()">Start Timer!</div>
+<div class="wrapper">
+<button class="startTimer reset" onclick="startTimer()" >
+    <i class="fas fa-play"></i>
+  </button>
+<button class="pauseTimer reset" onclick="pauseTimer()" >
+    <i class="fas fa-pause"></i>
+  </button>
+<button class="resetTimer reset" onclick="resetTimer()">Reset</button>
+</div>
+</div>
+</body>
+</html>
