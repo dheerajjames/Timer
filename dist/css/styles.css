@@ -9,7 +9,7 @@
   flex-direction: column;
   /* align-items:center; */
   justify-content: center;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 h1 {
@@ -50,5 +50,18 @@ button {
 
 .lighter {
   background: #CC0000;
+}
+
+@media (max-width: 991.98px) {
+  #timerContainer {
+    width: 500px;
+    align-items: center;
+  }
+  .timer {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
