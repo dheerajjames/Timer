@@ -9,16 +9,31 @@
 </head>
 <body>
 <div id="timerContainer">
-    <h1>StopWatch</h1>
-<div class="timer" onclick="startTimer()">Start Timer!</div>
-<div class="wrapper">
-<button class="startTimer reset" onclick="startTimer()" >
-    <i class="fas fa-play"></i>
-  </button>
-<button class="pauseTimer reset" onclick="pauseTimer()" >
-    <i class="fas fa-pause"></i>
-  </button>
-<button class="resetTimer reset" onclick="resetTimer()">Reset</button>
+  <div id="timer" class="timer">
+    <h1>Timer</h1>
+
+    <div id="timer-div" class="timer-content">
+        <div class="timer-input">
+            <input type="number" placeholder="HH" id="timer-hrs">
+            <input type="number" placeholder="MM" id="timer-mins">
+            <input type="number" placeholder="SS" id="timer-secs">
+        </div>
+    </div>
+    
+
+    <br /> 
+
+    <div class="display-timer">
+        <span id="timer-hour">00</span><p>:</p><span id="timer-minute">00</span><p>:</p><span id="timer-second">00</span>
+    </div>
+
+    <br />
+    
+    <div class="timer-btn">
+        <button type="button" id="start"><i class="fas fa-play fa-2x"></i></button>
+        <button type="button" id="pause"><i class="fas fa-pause fa-2x"></i></button>
+        <button type="button" id="t-reset"><i class="fas fa-redo fa-2x"></i></button> 
+    </div>
 </div>
 </div>
 </body>
